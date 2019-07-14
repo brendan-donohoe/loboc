@@ -1,0 +1,10 @@
+// ISEQ1: Test negate operation
+//tlc type: run
+//tlc case: 1=-1
+//tlc case: -1=1
+//tlc case: -1000=1000
+//tlc case: 2=-2
+//tlc case: -2=2
+//tlc case: 0xffffffff=1
+signed a;
+-a;

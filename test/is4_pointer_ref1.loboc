@@ -1,0 +1,11 @@
+// ISEQ4: Pointer reference and dereference
+//tlc type: run
+//tlc case: 1=1,2,3,0
+//tlc case: 2=1,2,3,1
+//tlc case: 3=1,2,3,2
+signed[3] a;
+signed b;
+signed[] p;
+
+p = &a[b];
+p[];

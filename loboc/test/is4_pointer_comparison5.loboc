@@ -1,0 +1,10 @@
+// ISEQ4: Pointer comparison
+//tlc type:run
+//tlc case: 1=0
+signed a;
+signed b;
+bool valueFalse;
+
+valueFalse = 0;
+
+(&a > &a) == valueFalse && (&a > &b) == valueFalse && (&a >= &b) == valueFalse;

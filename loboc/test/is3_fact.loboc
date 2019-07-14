@@ -1,0 +1,26 @@
+// ISEQ3: Calculates n!
+//tlc type: run
+//tlc case: 1=0
+//tlc case: 1=1
+//tlc case: 2=2
+//tlc case: 6=3
+//tlc case: 24=4
+//tlc case: 120=5
+//tlc case: 720=6
+//tlc case: 5040=7
+
+unsigned n;
+
+{
+    unsigned x;
+    unsigned prod;
+
+    x = 1;
+    prod = 1;
+
+    while (x++ < n) {
+        prod = prod * x;
+    }
+
+    prod;
+}

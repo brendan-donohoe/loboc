@@ -1,0 +1,17 @@
+// ISEQ3: Increment while loop
+//tlc type: run
+//tlc case: 25=0,10
+//tlc case: 50=-5,10
+//tlc case: 225=0,50
+//tlc case: 0=50,0
+signed a,b,x,y;
+x = 0;
+while (a < 5) {
+    y = b;
+    while (y > 5) {
+        x++;
+        --y;
+    }
+    a++;
+}
+x;

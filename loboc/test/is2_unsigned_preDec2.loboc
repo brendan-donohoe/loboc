@@ -1,0 +1,9 @@
+// ISEQ2: Unsigned pre-dec
+//tlc type: run
+//tlc case: 1=0
+//tlc case: 1=1
+//tlc case: 1=11
+unsigned a;
+unsigned b;
+b = --a;
+a == b;

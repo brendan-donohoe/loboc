@@ -1,0 +1,48 @@
+// ISEQ4: array of pointers to array of bools
+//tlc type: run
+//tlc case: 0=16,0x0d0e0f10,0x090a0b0c,0x05060708,0x01020304
+//tlc case: 1=16,0x0d0e0f20,0x090a0b0c,0x05060708,0x01020304
+//tlc case: 1=16,0x0d0e1f10,0x090a0b0c,0x05060708,0x01020304
+//tlc case: 1=16,0x0d1e0f10,0x090a0b0c,0x05060708,0x01020304
+//tlc case: 1=16,0x1d0e0f10,0x090a0b0c,0x05060708,0x01020304
+//tlc case: 1=16,0x0d0e0f10,0x090a0b1c,0x05060708,0x01020304
+//tlc case: 1=16,0x0d0e0f10,0x090a1b0c,0x05060708,0x01020304
+//tlc case: 1=16,0x0d0e0f10,0x091a0b0c,0x05060708,0x01020304
+//tlc case: 1=16,0x0d0e0f10,0x190a0b0c,0x05060708,0x01020304
+//tlc case: 1=16,0x0d0e0f10,0x090a0b0c,0x05060718,0x01020304
+//tlc case: 1=16,0x0d0e0f10,0x090a0b0c,0x05061708,0x01020304
+//tlc case: 1=16,0x0d0e0f10,0x090a0b0c,0x05160708,0x01020304
+//tlc case: 1=16,0x0d0e0f10,0x090a0b0c,0x15060708,0x01020304
+//tlc case: 1=16,0x0d0e0f10,0x090a0b0c,0x05060708,0x01020314
+//tlc case: 1=16,0x0d0e0f10,0x090a0b0c,0x05060708,0x01021304
+//tlc case: 1=16,0x0d0e0f10,0x090a0b0c,0x05060708,0x01120304
+//tlc case: 1=16,0x0d0e0f10,0x090a0b0c,0x05060708,0x11020304
+//tlc case: 16=16,0x1d1e1f20,0x191a1b1c,0x15161718,0x11121314
+unsigned count;
+bool[8] array1;
+bool[8] array2;
+bool[8][][2] arrayPointers;
+unsigned index;
+unsigned errorCount;
+unsigned size;
+
+arrayPointers[0] = &array1;
+arrayPointers[1] = &array2;
+
+errorCount = 0;
+index = 0;
+size = 8;
+while ( index < size ) {
+  if ( arrayPointers[0][][index++] != count-- ) {
+    ++errorCount;
+  }
+}
+
+index = 0;
+while ( index < size ) {
+  if ( arrayPointers[1][][index++] != count-- ) {
+    ++errorCount;
+  }
+}
+
+errorCount;

@@ -1,0 +1,7 @@
+// ISEQ2: Test assign
+//tlc type: run
+//tlc case: 6=10,1
+// (Note that by default only 10KB of header is scanned for //tlc comments!)
+unsigned a,b;
+a=5;
+a+b;

@@ -1,0 +1,8 @@
+// ISEQ1: Test multiplication
+//tlc type: run
+//tlc case: 4=2,2
+//tlc case: 6=2,3
+//tlc case: 10000=100,100
+//tlc case: 9000000=45000,200
+unsigned a,b;
+a*b;

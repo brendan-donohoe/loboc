@@ -1,0 +1,8 @@
+// ISEQ4: address of unsigned
+//tlc type: run
+//tlc case: 0x10008008=0
+signed empty1;
+bool empty2;
+unsigned target;
+
+&target;

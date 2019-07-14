@@ -1,0 +1,30 @@
+// ISEQ2: Array 1D
+//tlc type: run
+//tlc case: 55=0
+unsigned index;
+bool[10] array1;
+unsigned size;
+
+size = 10;
+
+while( index < size ) {
+  array1[ index ] = 10 - index;
+  ++index;
+}
+
+{
+  unsigned index;
+  unsigned sum;
+  index = 0;
+  sum = 0;
+  while( index < size ) {
+    unsigned cast;
+    cast = array1[ index ];
+    sum = sum + cast;
+    ++index;
+  }
+  sum;
+}
+
+
+

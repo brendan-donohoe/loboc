@@ -1,0 +1,12 @@
+// ISEQ3: Test while statement
+//tlc type: run
+//tlc case: 20=0,0
+unsigned value1;
+unsigned sum;
+unsigned stop;
+stop = 20;
+
+while ( value1++ < stop  ) {
+  ++sum;
+}
+sum;

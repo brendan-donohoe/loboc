@@ -1,0 +1,13 @@
+// ISEQ1: Test multiplication with division
+//tlc type: run
+//tlc case: 16=268369920,16711680,0,0,1
+//tlc case: -1=0xffff0000,0x0000ffff,0,0,1
+//tlc case: 1=0xffff0000,0xffff0000,0,0,1
+//tlc case: 0x01111111=0x0fffffff,0x0000000f,0,0,1
+//tlc case: 0x00000001=0xf0000000,0xf0000000,0,0,1
+//tlc case: 0x00000001=0xffffffff,0xffffffff,0,0,1
+//tlc case: -1=4294901760,65535,0,0,1
+//tlc case: 15000000=30000000,2,0,0,1
+//tlc case: 5=10,2,0,0,1
+signed a,b,c,d,e;
+e*(a/b);

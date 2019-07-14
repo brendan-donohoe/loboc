@@ -1,0 +1,46 @@
+// ISEQ2: Array 3D
+//tlc type: run
+//tlc case: 22155=0
+unsigned empty;
+signed[5][6][7] array1;
+
+{
+  signed count;
+  signed i;
+  count = i = 0;
+  while( i < 7 ) {
+    signed j;
+    j = 0;    
+    while( j < 6 ) {
+      signed k;
+      k = 0;    
+      while( k < 5 ) {
+        array1[i][j][k] = ++count;
+	++k;
+      }
+      ++j;
+    }
+    ++i;
+  }
+}
+
+{
+  signed sum;
+  signed i;
+  sum = i = 0;
+  while( i < 7 ) {
+    signed j;
+    j = 0;    
+    while( j < 6 ) {
+      signed k;
+      k = 0;    
+      while( k < 5 ) {
+        sum = sum + array1[i][j][k];
+        ++k;
+      }
+      ++j;
+    }
+    ++i;
+  }
+  sum;
+}

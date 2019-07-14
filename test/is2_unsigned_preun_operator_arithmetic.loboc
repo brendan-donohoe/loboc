@@ -1,0 +1,10 @@
+// ISEQ2: Test preunary operators (unsigned)
+//tlc type: run
+//tlc case: 56=10,5
+//tlc case: 0=2,500
+//tlc case: 502=3,500
+// (Note that by default only 10KB of header is scanned for //tlc comments!)
+unsigned a,b;
+--a;
+++b;
+--a*(++b);

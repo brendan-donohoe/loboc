@@ -1,0 +1,13 @@
+// ISEQ3: Test if-else statements
+//tlc type: run
+//tlc case: 6=1,-44
+//tlc case: -33=0,-33
+bool cond1;
+signed value1;
+
+if ( cond1 ) {
+  signed value1;
+  value1 = 6;
+} else {
+  value1;
+}

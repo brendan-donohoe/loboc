@@ -1,0 +1,11 @@
+// ISEQ5: Not equals fold test
+//tlc type: run
+//tlc case: 0=0
+signed result;
+{
+  bool a;
+  unsigned b;
+  a = 255;
+  b = 255;
+  a != b;
+}

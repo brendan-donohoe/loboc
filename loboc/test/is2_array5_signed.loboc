@@ -1,0 +1,11 @@
+// ISEQ2: Array 1D
+//tlc type: run
+//tlc case: 5=5,4,3,2,1,0
+//tlc case: 4=5,4,3,2,1,1
+//tlc case: 3=5,4,3,2,1,2
+//tlc case: 2=5,4,3,2,1,3
+//tlc case: 1=5,4,3,2,1,4
+signed[5] array1;
+signed index;
+
+array1[index];

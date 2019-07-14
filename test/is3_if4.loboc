@@ -1,0 +1,12 @@
+// ISEQ3: If else conditional
+//tlc type: run
+//tlc case: 3=0,1,2,3
+//tlc case: 2=0,0,2,3
+//tlc case: 0=-1,-1,0,1
+signed a,b,c,d;
+
+if(a == b) {
+    c;
+} else {
+    d;
+}

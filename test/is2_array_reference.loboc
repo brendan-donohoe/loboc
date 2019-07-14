@@ -1,0 +1,9 @@
+// ISEQ2: Array reference assignment
+//tlc type: run
+//tlc case: 1=0,1,2,1,0
+//tlc case: 2=0,1,2,2,0
+//tlc case: 42=0,1,42,2,0
+signed[3] a;
+signed b, c;
+c = a[b];
+c;

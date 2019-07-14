@@ -1,0 +1,8 @@
+// ISEQ2: Signed pre-dec
+//tlc type: run
+//tlc case: 2147483647=0x80000000
+//tlc case: -1=0
+//tlc case: 10=11
+//tlc case: -3=-2
+signed a;
+--a;

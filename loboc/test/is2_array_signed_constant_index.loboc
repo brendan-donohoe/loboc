@@ -1,0 +1,6 @@
+// ISEQ2 Constant array reference
+//tlc type: run
+//tlc case: 1=0,1,2
+//tlc case: 2=1,2,4
+signed[3] a;
+a[1];

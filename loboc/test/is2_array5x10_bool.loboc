@@ -1,0 +1,38 @@
+// ISEQ2: Array 2D
+//tlc type: run
+//tlc case: 1275=0
+unsigned empty;
+bool[5][10] array1;
+
+{
+  signed count;
+  signed i;
+  count = i = 0;
+  while( i < 10 ) {
+    signed j;
+    j = 0;    
+    while( j < 5 ) {
+      array1[i][j] = ++count;
+      ++j;
+    }
+    ++i;
+  }
+}
+
+{
+  signed sum;
+  signed i;
+  sum = i = 0;
+  while( i < 10 ) {
+    signed j;
+    j = 0;    
+    while( j < 5 ) {
+      signed cast;
+      cast = array1[i][j];
+      sum = sum + cast;
+      ++j;
+    }
+    ++i;
+  }
+  sum;
+}

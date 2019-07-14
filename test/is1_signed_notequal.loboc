@@ -1,0 +1,16 @@
+// ISEQ1: Test test not equivalent
+//tlc type: run
+//tlc case: 0=32,32
+//tlc case: 1=12,11
+//tlc case: 1=1,11
+//tlc case: 1=-1,4
+//tlc case: 1=44,43
+//tlc case: 0=0,0
+//tlc case: 0=-894,-894
+//tlc case: 1=12,-12
+//tlc case: 0=-123,-123
+//tlc case: 0=11,0x0000000b
+
+signed a,b;
+a!=b;
+

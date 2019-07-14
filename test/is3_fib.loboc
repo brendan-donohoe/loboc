@@ -1,0 +1,29 @@
+// ISEQ3: Calculates the nth fibonacci number
+//tlc type: run
+//tlc case: 1=0
+//tlc case: 1=1
+//tlc case: 2=2
+//tlc case: 3=3
+//tlc case: 5=4
+//tlc case: 8=5
+//tlc case: 13=6
+//tlc case: 21=7
+
+unsigned n;
+
+{
+    unsigned num1, num2, fib, x;
+
+    num1 = 1;
+    num2 = 1;
+    fib = 1;
+    x = 1;
+
+    while (x++ < n) {
+        fib = num1 + num2;
+        num2 = num1;
+        num1 = fib;
+    }
+
+    fib;
+}

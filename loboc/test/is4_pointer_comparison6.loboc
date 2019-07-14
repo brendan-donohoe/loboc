@@ -1,0 +1,21 @@
+// ISEQ4: Pointer comparison
+//tlc type:run
+//tlc case: 1=0x80000000,0x00000000,t,t,f,f,f,t
+//tlc case: 1=0x00000000,0x80000000,f,f,t,t,f,t
+//tlc case: 1=0x80000000,0x80000000,f,t,f,t,t,f
+//tlc case: 1=0x00000004,0x00000000,t,t,f,f,f,t
+signed[] ptr1;
+signed[] ptr2;
+bool cond1;
+bool cond2;
+bool cond3;
+bool cond4;
+bool cond5;
+bool cond6;
+
+(ptr1 > ptr2) == cond1 &&
+(ptr1 >= ptr2) == cond2 &&
+(ptr1 < ptr2) == cond3 &&
+(ptr1 <= ptr2) == cond4 &&
+(ptr1 == ptr2) == cond5 &&
+(ptr1 != ptr2) == cond6;

@@ -1,0 +1,7 @@
+// ISEQ4: Pointer comparison
+//tlc type:run
+//tlc case: 1=0
+signed a;
+signed b;
+
+&a <= &a && &a < &b && &b <= &b;

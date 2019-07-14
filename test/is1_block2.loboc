@@ -1,0 +1,7 @@
+// ISEQ1: test block
+//tlc type: run
+//tlc case: 0=3
+unsigned a;
+{
+  bool b;
+}

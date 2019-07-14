@@ -1,0 +1,7 @@
+// ISEQ2: Signed pre-inc
+//tlc type: run
+//tlc case: 0=0
+//tlc case: -1=-1
+//tlc case: 1=1
+signed a;
+a++;

@@ -1,0 +1,7 @@
+// ISEQ2 Comma array index
+//tlc type: run
+//tlc case: 3=0,1,2,3,1
+//tlc case: 2=0,1,2,3,0
+signed[2] a, b;
+signed i;
+(a,b)[i];

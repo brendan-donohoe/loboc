@@ -1,0 +1,7 @@
+// ISEQ2: Unsigned post-dec
+//tlc type: run
+//tlc case: 0=0
+//tlc case: 1=1
+//tlc case: 11=11
+unsigned a;
+a--;

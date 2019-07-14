@@ -1,0 +1,12 @@
+// ISEQ4: Illegal constant prop test with pointer
+//tlc type: run
+//tlc case: 2=0,1
+signed a;
+signed b;
+{
+  signed [] ptr;
+  ptr = &a;
+  a = 0;
+  ptr[] = 2;
+  b = a;
+}

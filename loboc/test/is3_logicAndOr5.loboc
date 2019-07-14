@@ -1,0 +1,11 @@
+// ISEQ3: Logical && example from class
+//tlc type: run
+//tlc case: 0=0
+//tlc case: 2=1
+//tlc case: 0=-1
+//tlc case: -1=-2
+signed a;
+bool b;
+
+( b = a++ ) || ( ( b = a-- ) != 3 );
+a;

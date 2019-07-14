@@ -1,0 +1,12 @@
+// ISEQ1: Variable return
+//tlc type: run
+//tlc case: 0=0
+//tlc case: 1=1
+//tlc case: -2=-2
+//tlc case: 99=99
+//tlc case: 2=2
+//tlc case: 0xffffffff=0xffffffff
+//tlc case: 42=42
+signed a;
+a;
+

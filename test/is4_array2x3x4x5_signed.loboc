@@ -1,0 +1,142 @@
+// ISEQ2: Array 4D
+//tlc type: run
+//tlc case: 220=0,0,0,0
+//tlc case: 219=0,0,0,1
+//tlc case: 218=0,0,1,0
+//tlc case: 217=0,0,1,1
+//tlc case: 216=0,0,2,0
+//tlc case: 215=0,0,2,1
+//tlc case: 214=0,1,0,0
+//tlc case: 213=0,1,0,1
+//tlc case: 212=0,1,1,0
+//tlc case: 211=0,1,1,1
+//tlc case: 210=0,1,2,0
+//tlc case: 209=0,1,2,1
+//tlc case: 208=0,2,0,0
+//tlc case: 207=0,2,0,1
+//tlc case: 206=0,2,1,0
+//tlc case: 205=0,2,1,1
+//tlc case: 204=0,2,2,0
+//tlc case: 203=0,2,2,1
+//tlc case: 202=0,3,0,0
+//tlc case: 201=0,3,0,1
+//tlc case: 200=0,3,1,0
+//tlc case: 199=0,3,1,1
+//tlc case: 198=0,3,2,0
+//tlc case: 197=0,3,2,1
+//tlc case: 196=1,0,0,0
+//tlc case: 195=1,0,0,1
+//tlc case: 194=1,0,1,0
+//tlc case: 193=1,0,1,1
+//tlc case: 192=1,0,2,0
+//tlc case: 191=1,0,2,1
+//tlc case: 190=1,1,0,0
+//tlc case: 189=1,1,0,1
+//tlc case: 188=1,1,1,0
+//tlc case: 187=1,1,1,1
+//tlc case: 186=1,1,2,0
+//tlc case: 185=1,1,2,1
+//tlc case: 184=1,2,0,0
+//tlc case: 183=1,2,0,1
+//tlc case: 182=1,2,1,0
+//tlc case: 181=1,2,1,1
+//tlc case: 180=1,2,2,0
+//tlc case: 179=1,2,2,1
+//tlc case: 178=1,3,0,0
+//tlc case: 177=1,3,0,1
+//tlc case: 176=1,3,1,0
+//tlc case: 175=1,3,1,1
+//tlc case: 174=1,3,2,0
+//tlc case: 173=1,3,2,1
+//tlc case: 172=2,0,0,0
+//tlc case: 171=2,0,0,1
+//tlc case: 170=2,0,1,0
+//tlc case: 169=2,0,1,1
+//tlc case: 168=2,0,2,0
+//tlc case: 167=2,0,2,1
+//tlc case: 166=2,1,0,0
+//tlc case: 165=2,1,0,1
+//tlc case: 164=2,1,1,0
+//tlc case: 163=2,1,1,1
+//tlc case: 162=2,1,2,0
+//tlc case: 161=2,1,2,1
+//tlc case: 160=2,2,0,0
+//tlc case: 159=2,2,0,1
+//tlc case: 158=2,2,1,0
+//tlc case: 157=2,2,1,1
+//tlc case: 156=2,2,2,0
+//tlc case: 155=2,2,2,1
+//tlc case: 154=2,3,0,0
+//tlc case: 153=2,3,0,1
+//tlc case: 152=2,3,1,0
+//tlc case: 151=2,3,1,1
+//tlc case: 150=2,3,2,0
+//tlc case: 149=2,3,2,1
+//tlc case: 148=3,0,0,0
+//tlc case: 147=3,0,0,1
+//tlc case: 146=3,0,1,0
+//tlc case: 145=3,0,1,1
+//tlc case: 144=3,0,2,0
+//tlc case: 143=3,0,2,1
+//tlc case: 142=3,1,0,0
+//tlc case: 141=3,1,0,1
+//tlc case: 140=3,1,1,0
+//tlc case: 139=3,1,1,1
+//tlc case: 138=3,1,2,0
+//tlc case: 137=3,1,2,1
+//tlc case: 136=3,2,0,0
+//tlc case: 135=3,2,0,1
+//tlc case: 134=3,2,1,0
+//tlc case: 133=3,2,1,1
+//tlc case: 132=3,2,2,0
+//tlc case: 131=3,2,2,1
+//tlc case: 130=3,3,0,0
+//tlc case: 129=3,3,0,1
+//tlc case: 128=3,3,1,0
+//tlc case: 127=3,3,1,1
+//tlc case: 126=3,3,2,0
+//tlc case: 125=3,3,2,1
+//tlc case: 124=4,0,0,0
+//tlc case: 123=4,0,0,1
+//tlc case: 122=4,0,1,0
+//tlc case: 121=4,0,1,1
+//tlc case: 120=4,0,2,0
+//tlc case: 119=4,0,2,1
+//tlc case: 118=4,1,0,0
+//tlc case: 117=4,1,0,1
+//tlc case: 116=4,1,1,0
+//tlc case: 115=4,1,1,1
+//tlc case: 114=4,1,2,0
+//tlc case: 113=4,1,2,1
+//tlc case: 112=4,2,0,0
+//tlc case: 111=4,2,0,1
+//tlc case: 110=4,2,1,0
+//tlc case: 109=4,2,1,1
+//tlc case: 108=4,2,2,0
+//tlc case: 107=4,2,2,1
+//tlc case: 106=4,3,0,0
+//tlc case: 105=4,3,0,1
+//tlc case: 104=4,3,1,0
+//tlc case: 103=4,3,1,1
+//tlc case: 102=4,3,2,0
+//tlc case: 101=4,3,2,1
+signed i;
+signed j;
+signed k;
+signed l;
+signed[2][3][4][5] array;
+
+{
+  signed baseValue;
+  signed index;
+  signed[] arrayPtr;
+  baseValue = 5 * 4 * 3 * 2 + 100;
+  index = 0;
+  arrayPtr = &array[0][0][0][0];
+  while ( index < 120 ) {
+    arrayPtr[] = baseValue - index++;
+    arrayPtr++;
+  }
+}
+
+array[i][j][k][l];

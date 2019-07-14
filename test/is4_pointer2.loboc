@@ -1,0 +1,38 @@
+// ISEQ4: Pointers
+//tlc type: run
+//tlc case: 1275=0
+unsigned empty;
+bool[5][10] array1;
+
+{
+  signed count;
+  signed i;
+  count = i = 0;
+  while( i < 5 ) {
+    signed j;
+    j = 0;    
+    while( j < 10 ) {
+      array1[j][i] = ++count;
+      ++j;
+    }
+    ++i;
+  }
+}
+
+{
+  signed sum;
+  signed i;
+  bool[] pointer;
+
+  sum = i = 0;
+  pointer = &array1[0][0];
+  
+  while( i < 50 ) {
+    signed cast;
+    cast = pointer[];
+    sum = sum + cast;
+    ++pointer;
+    ++i;
+  }
+  sum;
+}

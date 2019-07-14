@@ -1,0 +1,73 @@
+// ISEQ3: Find the number of primes below a specified input (less than 10000)
+// using the Sieve of Eratosthenes.
+//tlc type: run
+//tlc case: 0=1
+//tlc case: 0=2
+//tlc case: 1=3
+//tlc case: 4=10
+//tlc case: 24=97
+//tlc case: 25=100
+//tlc case: 168=1000
+//tlc case: 1229=10000
+
+unsigned upper;
+
+{
+  bool [10000] isPrime;
+  unsigned i;
+  unsigned numPrimes;
+
+  i = 2;
+  
+  // Build our table of primes. Initially, all values (except 0 and 1) are
+  // possible prime candidates.
+  
+  isPrime[0] = 0;
+  isPrime[1] = 0;
+  
+  while (i < upper)
+  {
+    isPrime[i++] = 1;
+  }
+  
+  i = 2;
+  
+  // Now, unmark all composite numbers from our table using the sieve
+  // algorithm.
+  
+  while (i*i < upper)
+  {
+    if (isPrime[i])
+    {
+      // i is prime.  Mark off multiples of i from our table, as these numbers
+      // have i as a prime factor.
+  
+      unsigned j;
+  
+      j = 2;
+  
+      while (j*i < upper)
+      {
+        isPrime[j*i] = 0;
+        j++;
+      }
+    }
+
+    i++;
+  }
+
+  // When we've finished, count the number of primes in our table.
+
+  numPrimes = 0;
+  i = 0;
+
+  while (i < upper)
+  {
+    if (isPrime[i++])
+    {
+      numPrimes++;
+    }
+  }
+
+  numPrimes;
+}

@@ -1,0 +1,13 @@
+// ISEQ5: Signed arith fold test
+//tlc type: run
+//tlc case: 35=0
+signed unused;
+{
+  signed a,b,c,d,e;
+  a = 7;
+  b = 10;
+  c = 2;
+  d = 1;
+  e = 1;
+  c*(a+b) + d;
+}

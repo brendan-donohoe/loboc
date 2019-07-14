@@ -1,0 +1,9 @@
+// ISEQ2: assignment operator
+//tlc type: run
+//tlc case: 1=0xffffff01
+//tlc case: 0=0xffffff00
+//tlc case: 0x000000ff=0x000000ff
+//tlc case: 0x000000ff=0xffffffff
+unsigned a;
+bool b, c;
+c = b = a;

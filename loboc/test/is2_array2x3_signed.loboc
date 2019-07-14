@@ -1,0 +1,19 @@
+// ISEQ2: Array 2D
+//tlc type: run
+//tlc case: 16=16,15,14,13,12,11,0,0
+//tlc case: 15=16,15,14,13,12,11,0,1
+//tlc case: 14=16,15,14,13,12,11,1,0
+//tlc case: 13=16,15,14,13,12,11,1,1
+//tlc case: 12=16,15,14,13,12,11,2,0
+//tlc case: 11=16,15,14,13,12,11,2,1
+signed[2][3] array;
+signed i;
+signed j;
+
+
+array[i][j];
+
+
+
+
+

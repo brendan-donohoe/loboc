@@ -1,0 +1,28 @@
+// ISEQ4: Pointer to an array of unsigned
+//tlc type: run
+//tlc case: 0xffffffff=0,0,1,2,3,4,5,6,7,8
+//tlc case: 0=0,1,2,3,4,5,6,7,8,9
+//tlc case: 1=0,2,3,4,5,6,7,8,9,10
+//tlc case: 2=0,3,4,5,6,7,8,9,10,11
+//tlc case: 3=0,4,5,6,7,8,9,10,11,12
+//tlc case: 4=0,5,6,7,8,9,10,11,12,13
+//tlc case: 7=8,0,1,2,3,4,5,6,7,8
+//tlc case: 8=8,1,2,3,4,5,6,7,8,9
+//tlc case: 9=8,2,3,4,5,6,7,8,9,10
+//tlc case: 10=8,3,4,5,6,7,8,9,10,11
+//tlc case: 11=8,4,5,6,7,8,9,10,11,12
+//tlc case: 12=8,5,6,7,8,9,10,11,12,13
+unsigned index;
+unsigned[9] d;
+unsigned[9][] dp;
+unsigned i, size;
+
+dp = &d;
+
+i=0;
+size = 9;
+while ( i < size ) {
+  dp[][i++]--;
+}
+
+dp[][index];

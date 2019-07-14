@@ -1,0 +1,27 @@
+// ISEQ4: Pointers
+//tlc type: run
+//tlc case: 1=0,0
+//tlc case: 1=0x00007b7b,0
+//tlc case: 1=0x00000101,0
+//tlc case: 1=0x00007f7f,0
+//tlc case: 0=0x0000ff11,0
+bool compare;
+bool target;
+
+bool test1;
+bool test2;
+bool test3;
+
+bool[] ptr1;
+bool[][] ptr2;
+bool[][][] ptr3;
+
+ptr1 = &target;
+ptr2 = &ptr1;
+ptr3 = &ptr2;
+
+test1 = ptr3[][][] == compare;
+test2 = ptr2[][] == compare;
+test3 = ptr1[] == compare;
+
+test1 && test2 && test3;

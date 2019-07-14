@@ -1,0 +1,16 @@
+// ISEQ1: Test four-function arithmetic
+//tlc type: run
+//tlc case: 3=1,2,1,0,0
+//tlc case: -3=7,-10,1,0,0
+//tlc case: 0xffffffff=0xffff0000,0x0000ffff,1,0,0
+//tlc case: -1=1,2,0,1,0
+//tlc case: 17=7,-10,0,1,0
+//tlc case: 0xfffe0001=0xffff0000,0x0000ffff,0,1,0
+//tlc case: 0=1,2,0,0,1
+//tlc case: 0=7,-10,0,0,1
+//tlc case: 0xffffffff=0xffff0000,0x0000ffff,0,0,1
+//tlc case: 11=7,-10,2,1,1
+//tlc case: 30=5,4,3,2,1
+//tlc case: -1=4294901760,65535,0,0,1
+signed a,b,c,d,e;
+c*(a+b) + d*(a-b) + e*(a/b);

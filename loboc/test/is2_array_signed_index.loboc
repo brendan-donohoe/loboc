@@ -1,0 +1,8 @@
+// ISEQ12: Array reference
+//tlc type: run
+//tlc case: 1=0,1,2,1
+//tlc case: 0=0,1,2,0
+//tlc case: 2=0,1,2,2
+signed[3] a;
+unsigned b;
+a[b];

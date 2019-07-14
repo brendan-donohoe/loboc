@@ -1,0 +1,9 @@
+// ISEQ2: Test array dereferencing (1D)
+//tlc type: run
+//tlc case: 21=10,20,1,1
+//tlc case: 11=10,20,1,0
+// (Note that by default only 10KB of header is scanned for //tlc comments!)
+unsigned[2] a;
+unsigned b;
+unsigned c;
+a[c]+b;

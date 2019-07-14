@@ -1,0 +1,13 @@
+// ISEQ3: Ternary operator
+//tlc type: run
+//tlc case: -4=5,-4,f
+//tlc case: 5=5,-4,t
+//tlc case: 111=111,-37,t
+//tlc case: 9=3,9,f
+//tlc case: 3=3,9,t
+signed a;
+signed b;
+bool cond1;
+signed result;
+
+result = cond1 ? a : b;

@@ -1,0 +1,8 @@
+// ISEQ4: address operator on pointer to signed
+//tlc type: run
+//tlc case: 0x10008008=0
+signed empty1;
+bool empty2;
+signed[] target;
+
+&target;

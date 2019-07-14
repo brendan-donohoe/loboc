@@ -1,0 +1,5 @@
+// ISEQ1: Test subtraction of actual number
+//tlc type: run
+//tlc case: -1=0
+signed a;
+a-1;

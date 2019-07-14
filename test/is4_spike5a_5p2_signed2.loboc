@@ -1,0 +1,17 @@
+// ISEQ4: address of operator using ((s5a.5.2))
+//tlc type: run
+//tlc case: 0x10008008=0
+signed v1;
+bool[2] v2;
+
+// Block 1
+{
+  unsigned v31, v32;
+}
+
+// Block 2
+{
+  bool v41;
+  signed[] v42;
+  &v42;
+}

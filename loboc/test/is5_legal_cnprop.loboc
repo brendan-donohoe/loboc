@@ -1,0 +1,7 @@
+// ISEQ5: Legal constant prop test
+//tlc type: run
+//tlc case: 0=0,1
+signed a;
+signed b;
+a = 0;
+b = a;

@@ -1,0 +1,11 @@
+// ISEQ1: test !=
+//tlc type: run
+//tlc case: 0=0,0
+//tlc case: 1=0,1
+//tlc case: 1=1,0
+//tlc case: 0=1,1
+//tlc case: 0=255,255
+//tlc case: 1=255,256
+bool a;
+unsigned b;
+a != b;

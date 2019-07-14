@@ -1,0 +1,9 @@
+// ISEQ1: And short circuit
+//tlc type: run
+//tlc case: 2=0,1,2,2
+//tlc case: 3=0,1,2,3
+//tlc case: 2=-1,-1,0,1
+signed a,b,c,d;
+
+(a == b) && (c == d++);
+d;

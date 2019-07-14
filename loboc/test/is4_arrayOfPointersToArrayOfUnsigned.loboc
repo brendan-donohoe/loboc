@@ -1,0 +1,42 @@
+// ISEQ4: array of pointers to array of unsigned
+//tlc type: run
+//tlc case: 0=10,10,9,8,7,6,5,4,3,2,1
+//tlc case: 1=10,100,9,8,7,6,5,4,3,2,1
+//tlc case: 1=10,10,90,8,7,6,5,4,3,2,1
+//tlc case: 1=10,10,9,80,7,6,5,4,3,2,1
+//tlc case: 1=10,10,9,8,70,6,5,4,3,2,1
+//tlc case: 1=10,10,9,8,7,60,5,4,3,2,1
+//tlc case: 1=10,10,9,8,7,6,50,4,3,2,1
+//tlc case: 1=10,10,9,8,7,6,5,40,3,2,1
+//tlc case: 1=10,10,9,8,7,6,5,4,30,2,1
+//tlc case: 1=10,10,9,8,7,6,5,4,3,20,1
+//tlc case: 1=10,10,9,8,7,6,5,4,3,2,10
+//tlc case: 10=10,100,90,80,70,60,50,40,30,20,10
+unsigned count;
+unsigned[5] array1;
+unsigned[5] array2;
+unsigned[5][][2] arrayPointers;
+unsigned index;
+unsigned errorCount;
+unsigned size;
+
+arrayPointers[0] = &array1;
+arrayPointers[1] = &array2;
+
+errorCount = 0;
+index = 0;
+size = 5;
+while ( index < size ) {
+  if ( arrayPointers[0][][index++] != count-- ) {
+    ++errorCount;
+  }
+}
+
+index = 0;
+while ( index < size ) {
+  if ( arrayPointers[1][][index++] != count-- ) {
+    ++errorCount;
+  }
+}
+
+errorCount;

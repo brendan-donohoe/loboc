@@ -1,0 +1,7 @@
+// ISEQ2: Unsigned pre-inc
+//tlc type: run
+//tlc case: 0=0xffffffff
+//tlc case: 1=0
+//tlc case: 2147483648=0x7fffffff
+unsigned a;
+++a;

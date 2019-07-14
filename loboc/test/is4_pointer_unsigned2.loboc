@@ -1,0 +1,41 @@
+// ISEQ4: Pointers
+//tlc type: run
+//tlc case: 1=0,0,1,1,3,3,247,f,f,f
+//tlc case: 1=60,60,20,20,10,10,247,f,f,f
+//tlc case: 0=0,1,1,1,3,3,247,t,t,t
+//tlc case: 0=60,60,20,19,10,10,247,t,t,t
+//tlc case: 0=0,0,1,1,3,2,247,t,t,t
+unsigned value3;
+unsigned compare3;
+unsigned value2;
+unsigned compare2;
+unsigned value1;
+unsigned compare1;
+
+unsigned target;
+
+bool test3;
+bool test2;
+bool test1;
+
+unsigned[] ptr1;
+unsigned[][] ptr2;
+unsigned[][][] ptr3;
+
+ptr1 = &target;
+ptr2 = &ptr1;
+ptr3 = &ptr2;
+
+target = 63;
+ptr3[][][] = value3;
+test3 = target == compare3;
+
+target = 62;
+ptr2[][] = value2;
+test2 = target == compare2;
+
+target = 61;
+ptr1[] = value1;
+test1 = target == compare1;
+
+test1 && test2 && test3;

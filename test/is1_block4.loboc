@@ -1,0 +1,15 @@
+// ISEQ1: test block
+//tlc type: run
+//tlc case: 4=0
+unsigned a;
+{
+  1;
+  {
+    2;
+    3;
+    {
+      // Empty.
+    }
+    4;
+  }
+}

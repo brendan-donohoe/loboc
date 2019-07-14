@@ -1,0 +1,17 @@
+// ISEQ3: Test logical operations
+//tlc type: run
+//tlc case: 1=t,t,t,t
+//tlc case: 0=f,f,f,f
+//tlc case: 0=t,f,f,f
+//tlc case: 1=f,t,t,f
+//tlc case: 0=f,t,f,f
+//tlc case: 1=t,f,t,f
+//tlc case: 0=f,f,t,f
+//tlc case: 0=t,t,f,f
+//tlc case: 0=f,f,t,t
+//tlc case: 1=t,f,t,f
+//tlc case: 1=t,t,t,f
+//tlc case: 0=f,f,t,t
+bool a,b,c,d;
+(a || b) && (c || d);
+

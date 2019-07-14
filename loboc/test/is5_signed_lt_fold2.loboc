@@ -1,0 +1,10 @@
+// ISEQ5: Signed less fold test
+//tlc type: run
+//tlc case: 1=0
+signed unused;
+{
+  signed a, b;
+  a = -5;
+  b = 1;
+  a < b;
+}

@@ -1,0 +1,7 @@
+// ISEQ4: address of operator on variable at initial GP location
+//tlc type: run
+//tlc case: 0x10008000=0
+signed target;
+
+&target;
+

@@ -1,0 +1,18 @@
+// ISEQ3: Test while statement and pre- and post-increment
+//tlc type: run
+//tlc case: 1=0,-1,20
+signed value1;
+signed value2;
+signed stop;
+
+value2 = value1;
+
+while ( value1++ < stop  ) {
+  // Empty.
+}
+
+while ( ++value2 < stop  ) {
+  // Empty.
+}
+
+value1 - value2;
