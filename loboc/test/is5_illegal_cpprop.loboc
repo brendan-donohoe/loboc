@@ -1,9 +1,0 @@
-// ISEQ5: Illegal copy prop test
-//tlc type: run
-//tlc case: 1=0,1,2
-signed a;
-signed b;
-signed c;
-a = b;
-b = 10;
-c = a;

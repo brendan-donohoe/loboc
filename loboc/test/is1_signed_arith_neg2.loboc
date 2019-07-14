@@ -1,9 +1,0 @@
-// ISEQ1: Test addition of negation
-//tlc type: run
-//tlc case: 2=1,-1
-//tlc case: -7=-5,2
-//tlc case: -2=-1,1
-//tlc case: 0=0,0
-signed a,b;
-a+-b;
-

@@ -1,7 +1,0 @@
-// ISEQ1: Tests loading a single bool
-//tlc type: run
-//tlc case: 1=t
-//tlc case: 0=f
-bool a;
-a;
-

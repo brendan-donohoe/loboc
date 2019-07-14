@@ -1,9 +1,0 @@
-// ISEQ5: Illegal constant prop test
-//tlc type: run
-//tlc case: 2=0,1,2
-signed a;
-signed b;
-signed c;
-a = 0;
-a = c;
-b = a;

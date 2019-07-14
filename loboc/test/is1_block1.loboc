@@ -1,6 +1,0 @@
-// ISEQ1: test block
-//tlc type: run
-//tlc case: 3=0
-//tlc case: 3=1
-unsigned a;
-{1;2;3;}
